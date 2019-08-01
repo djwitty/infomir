@@ -1,0 +1,47 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Form
+    link(rel="stylesheet", href="css/styles.css")
+  body
+    .container
+      section
+        header
+          h2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, porro?
+          h3 In tempore recusandae tenetur adipisci, natus voluptatum error. Saepe fugiat consequatur placeat!
+      form(action="")
+        .form-row
+          .form-group.col-md-6
+            label.sr-only(for="name")
+            input.form-control.required#name(type="text", name="name", placeholder="Name", required)
+          .form-group.col-md-6
+            label.sr-only(for="email")
+            input.form-control.required#email(type="email", name="email", placeholder="Email", required)
+        .form-row
+          .form-group.col-md-6
+            select.form-control.required#country(required)
+              option(value="none" selected) Country
+              option(value="Ukraine") Ukraine
+              option(value="Belorussia") Belorussia
+              option(value="Bulgary") Bulgary
+              option(value="Malta") Malta
+          .form-group.col-md-6
+            label.sr-only(for="phone")
+            input.form-control.required#email(type="number", name="phone", placeholder="Phone", required)
+        .form-row
+          .form-group.col-md-6
+            label.sr-only(for="company")
+            input.form-control.required#company(type="text", name="company", placeholder="Company")
+          .form-group.col-md-6
+            label.sr-only(for="email")
+            input.form-control.required#site(type="text", name="site", placeholder="Site")
+        .form-row
+          .form-group.col-md-12
+            textarea.form-control#message(name="message", cols="30", rows="4", placeholder="Type your message")
+        button.btn.btn-primary Send
+
+script(src="js/libs.min.js")
+script(src="js/index.js")
